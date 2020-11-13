@@ -97,7 +97,7 @@ const movies = {
   },
 };
 
-class userFavMovies extends Component {
+class UserFavMovies extends Component {
   render() {
     let { users, movies, profiles } = this.props
 
@@ -107,7 +107,7 @@ class userFavMovies extends Component {
           <li>
             {user.name}'s favorite movie is {
               movies.find(movie => (
-                movie.id == profiles.find(profile => (profile.userID == user.id)).favoriteMovieID
+                movie.id === profiles.find(profile => (profile.userID === user.id)).favoriteMovieID
              ))
             }
           </li>
@@ -126,7 +126,7 @@ export default class App extends Component {
           <h1 className="App-title">ReactND - Coding Practice</h1>
         </header>
         <h2>Favorite Movies</h2>
-        <userFavMovies users={users} movies={movies} profiles={profiles}/>
+        <UserFavMovies users={users} movies={movies} profiles={profiles}/>
       </div>
     );
   }
