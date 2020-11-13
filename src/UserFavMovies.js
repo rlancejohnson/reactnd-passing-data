@@ -2,14 +2,14 @@ import React, { Component } from 'react'
 
 export default class UserFavMovies extends Component {
     render() {
-      return (
+        return (
         <ol>
-          {this.props.users.map(user => (
-              <li key={user.id}>
-                  {user.name}
-              </li>
-          ))}
+            {this.props.users.map(user => (
+                <li key={user.id}>
+                    {user.name}
+                </li>
+            ))}
         </ol>
-      )
+        )
     }
-  }
+}
