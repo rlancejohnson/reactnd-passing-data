@@ -1,15 +1,17 @@
 import React, { Component } from 'react'
 
 export default class UserFavMovies extends Component {
-  render() {
-    return (
-      <ol>
-      {Object.values(this.props.users).map(user => (
-       <li key={user.id}>
-      {user.name}
-      </li>
-    ))}
-  </ol>
-)
-}
+    render() {
+        let {users, profiles, movies} = this.props;
+
+        return (
+            <ul>
+                {profiles.map(profile => (
+                    <li key={profile.id}>
+                        {users[profile.userID].name}'s favorite movie is {movies[profile.favoriteMovieID].name}
+                    </li>
+                ))}
+            </ul>
+        )
+    }
 }
