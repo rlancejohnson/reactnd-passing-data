@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import logo from './logo.svg';
-import UserFavMovies from './UserFavMovies';
+import FavoritesList from './FavoritesList';
 
 /*
 Use React and the data below to display a list of users alongside their favorite movies.
@@ -107,7 +107,7 @@ export default class App extends Component {
           <h1 className="App-title">ReactND - Coding Practice</h1>
         </header>
         <h2>Favorite Movies</h2>
-        <UserFavMovies users={users} movies={movies} profiles={profiles}/>
+        <FavoritesList users={users} movies={movies} profiles={profiles}/>
       </div>
     );
   }
