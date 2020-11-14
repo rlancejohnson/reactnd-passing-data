@@ -107,11 +107,7 @@ export default class App extends Component {
           <h1 className="App-title">ReactND - Coding Practice</h1>
         </header>
         <h2>Favorite Movies</h2>
-<<<<<<< HEAD
-		<FavoritesList users={users}/>
-=======
         <FavoritesList users={users} movies={movies} profiles={profiles}/>
->>>>>>> 2c8ca793cc3dff68892248ba9941a666e4f7cdc5
       </div>
     );
   }
